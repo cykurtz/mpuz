@@ -1,7 +1,4 @@
-
-
-
-
+I first encountered this game in emacs years ago.
 Imagine a long multiplication. You are multiplying a three digit number and a two tigit number. It will look like this:
 
         1 2 3
