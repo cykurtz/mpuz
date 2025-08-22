@@ -13,7 +13,7 @@ Imagine a long multiplication. You are multiplying a three digit number and a tw
     0 5 5 3 5
 
     For this puzzle the first multiplier(mult1) is a random three digit integer greater than 99 and less than 1000
-    The second multiplier(mult2) is a random two digit integergreater than 9 and less than 100.
+    The second multiplier(mult2) is a random two digit integer greater than 9 and less than 100.
     prod1 is the product of mult1 and the ones digit of mult2.
     prod2 is the product of mult1 and the tens digit of mult2.
     prodsum is the sum of prod1 and prod2.
