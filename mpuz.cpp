@@ -5,12 +5,6 @@
 #include<sstream>
 #include<vector>
 
-std::string mult1s;
-std::string mult2s;
-std::string prod1s;
-std::string prod2s;
-std::string prodsums;
-
 char letter = {'Y'};
 char answer = {'n'};
 char letters[]={'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J'};
@@ -20,20 +14,19 @@ char newletters[10];
 char mult1a[3];
 int mult1, mult2, prod1, prod2, prodsum, i, j, pick, hit, value, uniq, cand, stored, solved, plac;
 
-
 void display(){
 	// print some blank lines to create some space
 	for(i=0;i<6;i++){
 		std::cout << "\n";
 	}
 	
-	// print letters
+	// print letters -- comment out for true puzzle 
 	std::cout << "\n\t";
 	for(i=0;i<10;i++){
 	std::cout << letters[i] << " ";
 	}
 	
-	// print number scale
+	// print number scale -- comment out for true puzzle 
 	std::cout << "\n\t";
 	std::cout << "0|1|2|3|4|5|6|7|8|9|\n";
 	
@@ -170,17 +163,7 @@ int main(){
 			letters[value] = value+48;
 			solved++;
 			for(i=0;i<(stored-solved);i++){
-				if(unums[i] == value){
-				plac = i;
-				std::cout << "plac is " << plac;
-				}
-			}for(j=plac;j<(stored);j++){unums[j] = unums[j+1];}
-		
-		}
-		else{
-		std::cout << "\tNope, try again!\t";}
-
-		/*if(letters[value] == letter){*/
+				if(unums[i] == value){		/*if(letters[value] == letter){*/
 			// find value in unums
 			// end of find loop
 			// for(i = plac; i< (stored-solved); i++){unums[i] = unums[i+1];}// end of replace loop
@@ -191,6 +174,14 @@ int main(){
 		//end of if evaluate
 		//end of else evaluate
 
+				plac = i;
+				std::cout << "plac is " << plac;
+				}
+			}for(j=plac;j<(stored);j++){unums[j] = unums[j+1];}
+		
+		}
+		else{
+		std::cout << "\tNope, try again!\t";}
 
 }
 display();
