@@ -22,3 +22,7 @@ Imagine a long multiplication. You are multiplying a three digit number and a tw
     An array of letters([A, B, C, D, E, F, G, H, I, J]) is shuffled and each number is now represented by the letter at the index of the number.
 
     The player's task is to discover which number is represented by each letter.
+
+    Trapping the user input is incomplete. If the user inputs a letter that is out of range or a number that is out of range the program stops abruptly.
+
+    Also, there is no 'again(y/n)?' so the user must restart the game for each puzzle.
